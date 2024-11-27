@@ -31,8 +31,13 @@
 		// Top Bar
 		get_template_part( 'templates/header/top', 'bar' );
 
+	
+
 		// Page Header
 		get_template_part( 'templates/header/page', 'header' );
+		?>
+		FUCK
+		<?php
 
 		// Main Navigation
 		get_template_part( 'templates/header/main', 'navigation' );
@@ -43,7 +48,6 @@
 
 		<!-- Page Content -->
 		<div class="page-content">
-
 			<?php // Featured Slider and Links
 			$post_meta = get_post_meta(get_the_ID());
 

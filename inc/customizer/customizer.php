@@ -1249,7 +1249,8 @@ function ashe_customize_register( $wp_customize ) {
 	$font_family = array(
 		'Open+Sans' => esc_html__( 'Open Sans', 'ashe' ),
 		'Rokkitt' 	=> esc_html__( 'Rokkitt', 'ashe' ),
-		'Kalam' 	=> esc_html__( 'Kalam', 'ashe' )
+		'Kalam' 	=> esc_html__( 'Kalam', 'ashe' ),
+		'royal-touch-regular' => esc_html ( 'royal-touch-regular', 'ashe' )
 	);
 
 	// Logo Font Family
