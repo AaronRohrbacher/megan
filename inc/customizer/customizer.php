@@ -1255,6 +1255,10 @@ function ashe_customize_register( $wp_customize ) {
 
 	// Logo Font Family
 	ashe_select_control( 'typography', 'logo_family', esc_html__( 'Font Family', 'ashe' ), $font_family, 'refresh', 1 );
+	ashe_select_control( 'typography', 'logo_family', esc_html__( 'Font Family', 'ashe' ), $font_family, 'refresh', 1 );
+
+	ashe_text_control( 'typography', 'title_override', esc_html__( 'Override Blog Title', 'ashe' ), 'refresh', 1 );
+
 
 	// Navigation Font Family
 	ashe_select_control( 'typography', 'nav_family', esc_html__( 'Font Family', 'ashe' ), $font_family, 'refresh', 5 );

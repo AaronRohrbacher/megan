@@ -85,6 +85,7 @@ function ashe_options( $control ) {
 		'typography_nav_family' => 'Open+Sans',
 		'typography_nav_italic' => false,
 		'typography_nav_uppercase' => true,
+		'typography_title_override' => null,
 		'page_footer_copyright' => '',
 		'page_footer_show_scrolltop' => true,
 		'preloader_label' => false,
