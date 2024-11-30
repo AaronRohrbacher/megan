@@ -28,7 +28,7 @@
 					
 					<?php if ( is_home() || is_front_page() ) : ?>
 					<h1>
-						<a href="<?php echo esc_url( home_url('/') ); ?>" class="header-logo-a"><?php echo bloginfo( 'title' ) . esc_html ( 'royal-touch-regular', 'ashe' ); ?></a>
+						<a href="<?php echo esc_url( home_url('/') ); ?>" class="header-logo-a"><?php echo bloginfo( 'title' ); ?></a>
 					</h1>
 					<?php else : ?>
 					<a href="<?php echo esc_url( home_url('/') ); ?>" class="header-logo-a"><?php echo bloginfo( 'title' ); ?></a>
