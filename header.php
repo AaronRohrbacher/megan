@@ -36,7 +36,6 @@
 		// Page Header
 		get_template_part( 'templates/header/page', 'header' );
 		?>
-		FUCK
 		<?php
 
 		// Main Navigation
