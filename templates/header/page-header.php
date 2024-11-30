@@ -16,6 +16,16 @@
 						<img src="<?php echo esc_url(  $custom_logo[0] ); ?>" width="<?php echo esc_attr(  $custom_logo[1] ); ?>" height="<?php echo esc_attr(  $custom_logo[2] ); ?>" alt="<?php esc_attr( bloginfo('name') ); ?>">
 					</a>
 
+					<?php if ( is_home() || is_front_page() ) : ?>
+					<h1>
+						<a href="<?php echo esc_url( home_url('/') ); ?>" class="header-logo-a"><?php echo null || '' !== ashe_options('typography_title_override') ? ashe_options( 'typography_title_override' ) : bloginfo( 'title' ); ?></a>
+					</h1>
+					<?php else : ?>
+					<a href="<?php echo esc_url( home_url('/') ); ?>" class="header-logo-a"><?php echo bloginfo( 'title' ); ?></a>
+
+				<?php endif; ?>
+
+
 				<?php // SEO Hidden Title
 
 				if ( true === ashe_options( 'title_tagline_seo_title' ) ) {
