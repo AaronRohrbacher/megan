@@ -782,10 +782,11 @@ sup {
 }
 
 .site-description {
+  font-family: bebas;
   display: inline-block;
   margin-top: 15px;
   margin-bottom: 0;
-  font-size: 17px;
+  font-size: 40px;
   line-height: 1.1;
 }
 
@@ -1427,6 +1428,8 @@ sup {
 
 .post-media > a {
   display: block;
+  float: left;
+  padding: 0 0 10px 10px;
   position: absolute;
   top: 0;
   left: 0;

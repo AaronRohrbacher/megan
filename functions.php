@@ -289,11 +289,33 @@ function ashe_royal_touch_regular_font_url() {
     return $font_url;
 }
 
+function ashe_royal_touch_alt_font_url() {
+    $font_url = '';
+    if ( 'off' !== _x( 'on', 'Google font: on or off', 'ashe' ) ) {
+        $font_url = get_stylesheet_directory_uri() . "/assets/css/royal-touch-alt.css";
+    }
+    return $font_url;
+}
+
+
+function ashe_bebas_font_url() {
+    $font_url = '';
+    if ( 'off' !== _x( 'on', 'Google font: on or off', 'ashe' ) ) {
+        $font_url = get_stylesheet_directory_uri() . "/assets/css/bebas.css";
+    }
+    return $font_url;
+}
+
+
 
 function ashe_gfonts_scripts() {
     wp_enqueue_style( 'ashe-playfair-font', ashe_playfair_font_url(), array(), '1.0.0' );
     wp_enqueue_style( 'ashe-opensans-font', ashe_opensans_font_url(), array(), '1.0.0' );
 	wp_enqueue_style( 'ashe-royal-touch-regular-font', ashe_royal_touch_regular_font_url(), array() );
+	wp_enqueue_style( 'ashe-royal-touch-alt-font', ashe_royal_touch_alt_font_url(), array() );
+
+	wp_enqueue_style( 'ashe-bebas-font', ashe_bebas_font_url(), array() );
+
 
 
     // Load Kalam if selected
@@ -309,6 +331,11 @@ function ashe_gfonts_scripts() {
     if ( ashe_options( 'typography_logo_family' ) == 'royal-touch-regular' || ashe_options( 'typography_nav_family' ) == 'royal-touch-regular' ) {
     	wp_enqueue_style( 'ashe-royal-touch-regular-font', ashe_royal_touch_regular_font_url(), array() );
     }
+
+	if ( ashe_options( 'typography_logo_family' ) == 'royal-touch-alt' || ashe_options( 'typography_nav_family' ) == 'royal-touch-alt' ) {
+    	wp_enqueue_style( 'ashe-royal-touch-alt-font', ashe_royal_touch_alt_font_url(), array() );
+    }
+
 }
 add_action( 'wp_enqueue_scripts', 'ashe_gfonts_scripts' );
 
